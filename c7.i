@@ -73,7 +73,7 @@ void quotchar(char c) {
     else if (c == '\n') {
         putchar('\\');
         putchar('n');
-        putchar('\"');
+        putchar('"');
         putchar('\n');
         start_of_quote = 1;
     }
