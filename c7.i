@@ -24,7 +24,7 @@ char prog[] =
 "    else if (c == '\\n') {\n"
 "        putchar('\\\\');\n"
 "        putchar('n');\n"
-"        putchar('\\\"');\n"
+"        putchar('\"');\n"
 "        putchar('\\n');\n"
 "        start_of_quote = 1;\n"
 "    }\n"
@@ -40,7 +40,7 @@ char prog[] =
 "        putchar(prog[i++]);\n"
 "    }\n"
 "\n"
-"    int j = 0; \n"
+"    int j = 0;\n"
 "    while (j < sizeof(prog)/sizeof(prog[0]) - 1) {\n"
 "        quotchar(prog[j++]);\n"
 "    }\n"
@@ -89,7 +89,7 @@ int main()
         putchar(prog[i++]);
     }
 
-    int j = 0; 
+    int j = 0;
     while (j < sizeof(prog)/sizeof(prog[0]) - 1) {
         quotchar(prog[j++]);
     }
